@@ -6,8 +6,8 @@
   "scripts": {
     "db": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all",
     "dev": "nodemon src/server.js",
-    "db:setup": "NODE_ENV=production npx sequelize db:migrate && NODE_ENV=production npx sequelize db:seed:all",
-    "start": "NODE_ENV=production node src/server.js"
+    "db:setup": "NODE_ENV=Noteion npx sequelize db:migrate && NODE_ENV=Noteion npx sequelize db:seed:all",
+    "start": "NODE_ENV=Noteion node src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +30,7 @@
     "jsonwebtoken": "^9.0.3",
     "morgan": "^1.10.1",
     "multer": "^2.0.2",
+    "mysql2": "^3.16.0",
     "nodemon": "^3.1.11",
     "pg": "^8.16.3",
     "pg-hstore": "^2.3.4",
